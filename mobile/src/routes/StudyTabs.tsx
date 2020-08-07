@@ -43,7 +43,7 @@ const StudyTabs = () => {
 				options={{
 					tabBarLabel: 'Proffys',
 					tabBarIcon: ({ color, size, focused }) => {
-						return <Ionicons name="ios-easel" size={size} color={focused ? '8257e5' : color} />;
+						return <Ionicons name="ios-easel" size={size} color={focused ? '#8257e5' : color} />;
 					}
 				}}
 			/>
@@ -53,7 +53,7 @@ const StudyTabs = () => {
 				options={{
 					tabBarLabel: 'Favoritos',
 					tabBarIcon: ({ color, size, focused }) => {
-						return <Ionicons name="ios-heart" size={size} color={focused ? '8257e5' : color} />;
+						return <Ionicons name="ios-heart" size={size} color={focused ? '#8257e5' : color} />;
 					}
 				}}
 			/>

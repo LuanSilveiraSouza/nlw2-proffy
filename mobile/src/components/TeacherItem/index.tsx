@@ -7,6 +7,8 @@ import heartOutlineIcon from '../../assets/images/icons/heart-outline.png';
 import unfavoriteIcon from '../../assets/images/icons/unfavorite.png';
 import whatsappIcon from '../../assets/images/icons/whatsapp.png';
 
+import api from '../../services/api';
+
 import styles from './styles';
 
 export interface Teacher {
@@ -28,6 +30,10 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
 	const [isFavorited, setIsFavorited] = useState(favorited);
 
 	const handleLinkToWhatsapp = () => {
+		api.post('connections', {
+			user_id: teacher.id
+		});
+
 		Linking.openURL(`whatsapp://send?phone=${teacher.whatsapp}`);
 	};
 
@@ -43,17 +49,17 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
 		if (isFavorited) {
 			const favoriteIndex = favoritesArray.findIndex((teacherItem: Teacher) => {
 				return teacherItem.id === teacher.id;
-      });
-      
-      favoritesArray.splice(favoriteIndex, 1);
+			});
 
-      setIsFavorited(false);
+			favoritesArray.splice(favoriteIndex, 1);
+
+			setIsFavorited(false);
 		} else {
 			favoritesArray.push(teacher.id);
 
 			setIsFavorited(true);
 		}
-    await AsyncStorage.setItem('favorites', JSON.stringify(favoritesArray));
+		await AsyncStorage.setItem('favorites', JSON.stringify(favoritesArray));
 	};
 
 	return (

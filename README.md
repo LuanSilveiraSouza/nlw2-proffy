@@ -45,17 +45,17 @@ The idea and implementation has made in Next Level Week 2 by [Rocketseat](https:
 
 # :camera: Screenshots
 
-<p align="center">
-  <h2>Web Screenshots</h2>
+## Web Screenshots
+<div>
   <img  src="./.github/web-landing.png"  alt="Web Landing Page"  width="400"/>
   <img  src="./.github/web-study.png"  alt="Web Study Page"  width="400"/>
-  
-  <br/>
-  
-  <h2>Mobile App Screenshots</h2>
-  <img  src="./.github/mobile-landing.png"  alt="Mobile Landing Page"  width="200"/>
-  <img  src="./.github/mobile-study.png"  alt="Mobile Study Page"  width="200"/>
-</p>
+</div>
+
+## Mobile App Screenshots
+<div>
+  <img  src="./.github/mobile-landing.png"  alt="Mobile Landing Page"  width="100"/>
+  <img  src="./.github/mobile-study.png"  alt="Mobile Study Page"  width="100"/>
+</div>
 
 # :computer: Technologies
 

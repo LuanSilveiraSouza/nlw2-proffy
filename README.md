@@ -53,8 +53,8 @@ The idea and implementation has made in Next Level Week 2 by [Rocketseat](https:
 
 ## Mobile App Screenshots
 <div>
-  <img  src="./.github/mobile-landing.png"  alt="Mobile Landing Page"  width="100"/>
-  <img  src="./.github/mobile-study.png"  alt="Mobile Study Page"  width="100"/>
+  <img  src="./.github/mobile-landing.jpeg"  alt="Mobile Landing Page"  width="200"/>
+  <img  src="./.github/mobile-study.jpeg"  alt="Mobile Study Page"  width="200"/>
 </div>
 
 # :computer: Technologies

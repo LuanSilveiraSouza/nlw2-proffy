@@ -24,25 +24,27 @@ const TeacherList = () => {
 	const [week_day, setWeekDay] = useState('');
 	const [time, setTime] = useState('');
 
-  const loadFavorites = () => {
-    AsyncStorage.getItem('favorites').then((response) => {
+	const loadFavorites = () => {
+		AsyncStorage.getItem('favorites').then((response) => {
 			if (response) {
 				const favoritedTeachers = JSON.parse(response);
-				const favoritedTeachersIds = favoritedTeachers.map((teacher: Teacher) => { 
-          return teacher.id;
-        });
+				const favoritedTeachersIds = favoritedTeachers.map(
+					(teacher: Teacher) => {
+						return teacher.id;
+					}
+				);
 
 				setFavorites(favoritedTeachersIds);
 			}
 		});
-  }
+	};
 
 	const handleToggleFilters = () => {
 		setIsFiltersVisible(!isFiltersVisible);
 	};
 
 	const handleSubmit = async () => {
-    loadFavorites();
+		loadFavorites();
 		const response = await api.get('classes', {
 			params: {
 				subject,
@@ -111,7 +113,11 @@ const TeacherList = () => {
 			>
 				{teachers.map((teacher: Teacher) => {
 					return (
-						<TeacherItem key={teacher.id} teacher={teacher} favorited={favorites.includes(teacher.id)} />
+						<TeacherItem
+							key={teacher.id}
+							teacher={teacher}
+							favorited={favorites.includes(teacher.id)}
+						/>
 					);
 				})}
 			</ScrollView>

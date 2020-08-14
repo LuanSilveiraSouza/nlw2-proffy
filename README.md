@@ -9,13 +9,13 @@
 
   <img  alt="Repository size"  src="https://img.shields.io/github/repo-size/LuanSilveiraSouza/nlw2-proffy?color=8257E5&style=flat-square">
 
-  <a  href="https://github.com/RafaelGoulartB/proffy/commits/master">
+  <a  href="https://github.com/LuanSilveiraSouza/nlw2-proffy/commits/master">
     <img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/LuanSilveiraSouza/nlw2-proffy?color=8257E5&style=flat-square">
   </a>
 
   <img  alt="License"  src="https://img.shields.io/badge/license-MIT-8257E5?&style=flat-square">
 
-  <a  href="https://github.com/RafaelGoulartB/proffy/stargazers">
+  <a  href="https://github.com/LuanSilveiraSouza/nlw2-proffy/stargazers">
     <img  alt="Stargazers"  src="https://img.shields.io/github/stars/LuanSilveiraSouza/nlw2-proffy?color=8257E5&logo=github&style=flat-square">
   </a>
 </p>
